@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>ROCKPAPERSCISSORS</title>
+	<!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS -->
+    <script src="js/principal.js"></script>
+</head>
+<body>
+<div class="fullscreenDiv">
+	<div class="container">
+		<div class="column"><span class="messagePrincipal">Let's play rock, paper, scissors!</span></div>
+		<div class="column2"><span class="messageScore">SCORE <span class="messageScorePoints">Tú: <strong id="yourscore"></strong></span>
+			<span class="messageScorePoints">PC: <strong id="pcscore"></strong></span></span>
+		</div>
+		</div>
+
+		<div class="align_container">
+		<div class="center-items"><span class="messageInstructions">Elige tu jugada</span>
+		<div class="padding-items">
+			<button value="Piedra" class="rock" onClick="start(this.value)">Piedra</button>
+			<button value="Papel" class="paper" onClick="start(this.value)">Papel</button>
+			<button value="Tijera" class="scissors" onClick="start(this.value)">Tijera</button>
+		</div>
+		<div class="padding-items">
+			<div class="center-items">
+				<span class="messagePlay">Elegiste: <strong id="youChoss" class=""></strong></span>
+				<span class="messagePlay">La PC eligió: <strong class="" id="pcChoss"></strong></span>
+				<div class="padding-items"><span id="results" class="messagePlay"></span></div>
+		</div></div>
+	    </div>
+		</div>
+
+
+</div>
+
+
+</body>
+</html>

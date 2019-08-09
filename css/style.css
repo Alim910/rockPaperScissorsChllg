@@ -1,0 +1,270 @@
+html{ 
+	background-color: #000;
+	background-size: 100%;	
+}
+.fullscreenDiv {
+	width: 100%;
+    height: auto;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.container {
+    position: relative;
+    display: table;
+    width: 75%;
+    padding-right: 90px;
+    padding-top: 90px;
+}
+.container .column {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 530px;
+}
+.container .column2 {
+    display: table-cell;
+    vertical-align: middle;
+    float: right;
+    padding-right: 50px;
+}
+.align_container {
+	position: relative;
+    height: 100%;
+    padding-top: 60px;
+}
+.align_container .center-items{
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    text-align: center;
+}
+.align_container .padding-items{
+    padding-top: 20px;
+    text-align:center;
+}
+
+span {
+    width: 100%;
+}
+.messagePrincipal {
+  font-family: Verdana, Geneva, Sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  color: white;
+  display: flex;
+  width: 330px;
+  word-break: break-all;
+  vertical-align:middle;
+  line-height: 150%
+}
+.messagePlay {
+  font-family: Verdana, Geneva, Sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color:white;
+  display: flex;
+  line-height: 150%
+}
+.messageScore {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color:#cf88f5;
+  float: right;
+  display: table-cell;
+  vertical-align: middle;
+}
+.messageScorePoints {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color:white;
+  float: right;
+  display: table-cell;
+  vertical-align: top;
+  line-height: 150%;
+}
+.messageInstructions {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  color:white;
+  float: right;
+  display: table-cell;
+  vertical-align: top;
+  line-height: 150%;
+}
+.strong_rock {
+color:#e46161; /* red */
+}
+.strong_paper {
+ color:#15b5ff; /* red */
+}
+.strong_scissors {
+ color:#91DA94; /* red */
+}
+button {
+  border-radius: 100px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 3px;
+  cursor: pointer;
+}
+
+.rock{
+	background-color: #e46161; /* red */
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/rock.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+ }
+ .paper{
+    background-color: #15b5ff; /* blue */
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/paper.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+ }
+ .scissors{
+    background-color: #91DA94; /* green */
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/scissors.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+ }
+
+ @media screen and (max-width: 768px) {
+.container {
+	position: relative;
+    display: table;
+    width: 110%;
+    padding-right: 10px;
+    padding-top: 80px;
+}
+
+.messagePrincipal {
+  font-family: Verdana, Geneva, Sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color:white;
+  display: flex;
+  width: 190px; 
+  word-break: break-all;
+  vertical-align:middle;
+  line-height: 150%
+}
+
+.messagePlay {
+	font-family: Verdana, Geneva, Sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    display: inline-grid;
+    line-height: 150%;
+}
+.messageScore {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color:#cf88f5;
+  float: right;
+  display: table-cell;
+  vertical-align: middle;
+}
+.messageScorePoints {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color:white;
+  float: right;
+  display: table-cell;
+  vertical-align: top;
+  line-height: 150%;
+}
+.messageInstructions {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  color:white;
+  float: right;
+  display: table-cell;
+  vertical-align: top;
+  line-height: 150%;
+}
+
+.container .column {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+.container {
+	position: relative;
+    display: table;
+    width: 100%;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+.container .column2 {
+    display: table-cell;
+    vertical-align: middle;
+    float: right;
+    padding-right: 100px;
+}
+.container .column {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 100px;
+}
+.messagePlay {
+    font-family: Verdana, Geneva, Sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    display: inline-grid;
+    line-height: 150%;
+}
+}
+
+@media only screen and (max-width: 1156px) {
+	.container {
+	position: relative;
+    display: table;
+    width: 100%;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
+.container .column {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 180px;
+}
+.container .column2 {
+    display: table-cell;
+    vertical-align: middle;
+    float: right;
+    padding-right: 200px;
+}
+.messagePlay {
+    font-family: Verdana, Geneva, Sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    line-height: 150%;
+}
+}
